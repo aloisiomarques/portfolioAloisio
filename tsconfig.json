@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "es2022",
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": false,       // Remove a geração de arquivos .js.map
+    "declaration": false,     // Remove a geração de arquivos de declaração .d.ts
+    "declarationMap": false,   // Remove a geração de arquivos .d.ts.map
+    "strict": true,
+    "esModuleInterop": true,
+
+    "lib": ["ES2025", "DOM", "DOM.Iterable"],
+
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

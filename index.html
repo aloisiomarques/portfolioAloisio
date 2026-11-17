@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aloisio Filho - Software Engineer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Aloisio Filho - Software Engineer and UI/UX Designer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="Aloisio Filho">
+        <span class="logo__text">Aloisio Filho</span>
+      </a>
+      <nav class="nav">
+        <a href="#home" class="nav__link">Inicio</a>
+        <a href="#about" class="nav__link">Sobre</a>
+        <a href="#skills" class="nav__link">Habilidades</a>
+        <a href="#Projetos" class="nav__link">Projetos</a>
+      </nav>
+
+      <div class="header__actions">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Alternar tema claro/escuro"
+          title="Alternar tema"
+        >
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+        </button>
+
+        <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__avatar">
+          <div class="avatar-glow"></div>
+          <img
+            src="img/aloisio.jpg"
+            alt="Aloisio Filho"
+            class="avatar-img"
+            width="351"
+            height="353"
+          />
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__greeting">
+            Olá! Eu sou <span class="text-purple">Aloisio Filho</span>
+          </p>
+          <div class="hero__title-block">
+            <p class="hero__subtitle">Um Programador que</p>
+            <h1 class="hero__title">
+              Não julga um código
+              <br />
+              Apenas pelas <span class="text-purple cover-word">aparências</span>...
+            </h1>
+            <p class="hero__tagline">Porque, por trás de cada linha, existe uma lógica, uma ideia e a oportunidade de transformar problemas em soluções.</p>
+          </div>
+
+          <div class="hero__role">
+            <h2 class="role-text">
+              Eu sou <span id="typed-text" class="typed"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero__current">
+              Atualmente, Estou estudando na
+              <a href="https://soulcode.com/" target="_blank" rel="noopener" class="company-link">
+                <img src="img/100297907.jpeg" alt="SoulCode" width="20" height="20" />
+                SoulCode,
+              </a>
+            </p>
+          </div>
+
+          <p class="hero__bio">
+          Meu objetivo é ingressar no mercado de tecnologia, conquistar minha 
+          primeira oportunidade na área de desenvolvimento de software, colocar 
+          meus conhecimentos em prática, adquirir experiência profissional e 
+          contribuir para projetos que gerem valor para as pessoas e as empresas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="skills__visual">
+          <img
+            src="img/Vórtice Neon do Ecossistema Tech.png"
+            alt="Skills illustration - tech stack orbiting"
+            class="skills-img"
+          />
+        </div>
+
+        <!-- Cápsulas de skills -->
+        <ul class="skills-list" id="skillsList" aria-label="Lista de habilidades">
+          <li class="skill-capsule">TypeScript</li>
+          <li class="skill-capsule">HTML</li>
+          <li class="skill-capsule">CSS</li>
+          <li class="skill-capsule">JavaScript</li>
+          <li class="skill-capsule">React</li>
+          <li class="skill-capsule">UI/UX</li>
+        </ul>
+
+        <!-- Formulário: adição dinâmica de habilidades -->
+        <form class="skills-form" id="skillsForm" novalidate>
+          <label for="skillInput" class="skills-form__label">Adicionar nova habilidade</label>
+          <div class="skills-form__row">
+            <input
+              type="text"
+              id="skillInput"
+              class="skills-form__input"
+              placeholder="Ex: Node.js, Figma, Python..."
+              autocomplete="off"
+              maxlength="40"
+            />
+            <button type="submit" class="skills-form__btn">Adicionar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Work Experience -->
+    <section class="experience" id="about">
+      <div class="container">
+        <h2 class="section-title">Experiência profissional</h2>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card__icon">
+              <img src="img/icons8-arquivo-de-código-96.png" alt="Matrix" />
+            </div>
+            <h3 class="card__title">DevCore Solutions - Develop software</h3>
+            <p class="card__desc">
+              A DevCore Solutions é uma empresa especializada no desenvolvimento de soluções de software utilizando Java. 
+              Criamos aplicações robustas, escaláveis e seguras, desenvolvendo sistemas personalizados, 
+              APIs REST e soluções back-end para atender às necessidades de diferentes negócios. 
+              Nosso compromisso é transformar ideias em tecnologia, combinando inovação, qualidade e eficiência para 
+              entregar resultados que fazem a diferença.
+            </p>
+            <a href="#" class="card__link" target="_blank" rel="noopener">
+              LEIA MAIS →
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <img src="img/icons8-angular-96.png" alt="angularTech" />
+            </div>
+            <h3 class="card__title">AngularTech Solutions  - Tech solutions</h3>
+            <p class="card__desc">
+             é uma empresa especializada no desenvolvimento de aplicações web modernas utilizando Angular. 
+             Criamos interfaces dinâmicas, responsivas e intuitivas, oferecendo experiências digitais que unem desempenho, 
+             acessibilidade e inovação. Nosso foco é desenvolver soluções escaláveis e eficientes, 
+             transformando necessidades de negócio em aplicações funcionais e experiências que conectam pessoas e tecnologia.
+            </p>
+            <a href="#" class="card__link" target="_blank" rel="noopener">
+              LEIA MAIS →
+            </a>
+          </article>
+
+        </div>
+
+        <p class="looking-for">
+          Atualmente, estou buscando fazer parte de uma equipe multidisciplinar.<br />
+          Que valorize a melhoria da qualidade de vida das pessoas por meio de um design acessível.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects" id="Projetos">
+      <div class="container">
+        <!-- Project 1 -->
+        <article class="project project--left">
+          <div class="project__content">
+            <span class="project__label">Projeto em Destaque</span>
+            <h3 class="project__title">Agente Marx - Agente de Monitoramento de Rede e Detecção/Prevenção de Intrusão</h3>
+            <div class="project__desc-box">
+              <p>
+              O Marx Sentinel é um agente autônomo, headless e de altíssima performance para monitoramento de tráfego 
+              de rede e detecção/mitigação de intrusões em ambientes 
+              Linux (Fedora, Arch Linux, Debian), etc.
+              Construído sob uma estrita meta de baixíssimo consumo de recursos, ele opera com < 30 MB de RAM em idle, 
+              capturando e inspecionando fluxos de pacotes em interfaces físicas (eth0, wlan0) e 
+              virtuais (KVM/libvirt virbr0) com tempo de resposta sub-milissegundo, correlação temporal por janelas 
+              deslizantes, regras declarativas em YAML, mitigação ativa via nftables com verificação mandatória de 
+              allowlist, notificações multi-canal (ntfy, Telegram, Webhooks, e-mail) e um Dashboard Web em tempo real 
+              integrado, desenhado com precisão visual escura e luzes neon inspirada no modelo corporativo de ponta.
+              </p>
+            </div>
+          </div>
+          <div class="project__media">
+            <img
+              src="img/agentMarx.png"
+              alt="NeuraWeb – Futuristic AI Website Landing Design"
+            />
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project project--right">
+          <div class="project__media">
+            <img
+              src="img/projeto2.png"
+              alt="Apple Vision Pro – HR Software Design"
+            />
+          </div>
+          <div class="project__content">
+            <span class="project__label">Projeto em Destaque</span>
+            <h3 class="project__title">HexoTech – Blog Focado em Tecnologia e Cibersegurança</h3>
+            <div class="project__desc-box">
+              <p>
+               O HexoTech é um blog dedicado ao universo da tecnologia e da cibersegurança, com foco em compartilhar 
+               conhecimentos, explorar tendências e apresentar conteúdos sobre segurança digital, 
+               desenvolvimento de software, redes e proteção de dados. Seu objetivo é tornar a informação tecnológica 
+               mais acessível, promovendo o aprendizado e incentivando uma cultura de inovação e conscientização 
+               sobre segurança da informação.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <h2 class="section-title">Contato</h2>
+        <p class="contact__text">
+          Atualmente, estou em busca de fazer parte de uma equipe 
+          multidisciplinar que valorize a melhoria da qualidade de vida das 
+          pessoas por meio de um design acessível. Tem algum projeto em mente? 
+          Vamos nos conectar!
+        </p>
+        <a href="mailto:aloisio@hotmail.com.br" class="contact__email">aloisio@hotmail.com.br</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="social">
+        <a
+          href="https://github.com/aloisiomarques"
+          class="social__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          title="GitHub"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/aloisiomarques/"
+          class="social__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+          </svg>
+        </a>
+
+        <a
+          href="https://instagram.com/"
+          class="social__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          title="Instagram"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+          </svg>
+        </a>
+
+        <a
+          href="#"
+          class="social__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+          title="X"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.9 1.15h3.67l-8.02 9.16L24 22.85h-7.4l-5.8-7.58-6.63 7.58H.49l8.58-9.8L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.03L6.48 3.24H4.3l13.31 17.41z"/>
+          </svg>
+        </a>
+
+        <a
+          href="mailto:aloisio@hotmail.com.br"
+          class="social__link"
+          aria-label="Email"
+          title="Email"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer__copy">© 2026 Aloisio Filho. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="dist/app.js"></script>
+</body>
+</html>

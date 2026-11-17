@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Recriação do portfolio de [Ibrahim Memon](https://figma-portfolio-ten.vercel.app/) no modelo **tradicional** (sem React/Next.js/Tailwind).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}
