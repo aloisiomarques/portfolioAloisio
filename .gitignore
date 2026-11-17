@@ -1,0 +1,22 @@
+
+# Arquivos compilados do TypeScript
+dist/
+
+# Dependências
+node_modules/
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Configurações locais do VS Code
+.vscode/
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
